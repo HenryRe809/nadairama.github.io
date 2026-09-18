@@ -293,13 +293,27 @@ footer { background-color: var(--footer-bg); color: var(--footer-text); padding:
         position: absolute; top: 100%; left: 0; width: 100%;
         background-color: var(--header-bg); border-bottom: 1px solid var(--border-color); display: none;
     }
-    nav.active { display: block; }
+    
+    /* PENAMBAHAN: Beri bayangan agar menu dropdown terlihat terpisah dari background */
+    nav.active { 
+        display: block; 
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    }
+    
     nav ul { flex-direction: column; gap: 0; }
     nav ul li a { display: block; padding: 15px 20px; border-top: 1px solid var(--border-color); }
     .hero h1 { font-size: 2.5rem; }
+    
+    /* PENAMBAHAN: Perkecil teks deskripsi agar tidak penuh di layar HP */
+    .hero p { font-size: 1rem; }
+    
     .artikel-header h1 { font-size: 2rem; }
     .section-header { align-items: stretch; flex-direction: column; gap: 18px; }
     .search-artikel { min-width: 0; }
+    
+    /* PENAMBAHAN: Kurangi tinggi gambar artikel di layar HP */
+    .kartu-img-wrapper { height: 180px; }
+    
     .form-footer { flex-direction: column; }
     .footer-container { grid-template-columns: 1fr; }
     .author-box { flex-direction: column; text-align: center; }
