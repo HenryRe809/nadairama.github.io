@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nada & Irama | Platform Berita Musik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">NADA <span>&</span> IRAMA</a>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="Tentang Kami.html" class="">Tentang Kami</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-icon" aria-label="Ganti Tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="btn-icon mobile-only" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Menyelami Dunia Suara Tanpa Batas</h1>
+            <p>Platform jurnalisme musik independen yang membahas evolusi genre, ulasan album terbaru, dan cerita di balik layar dari musisi favorit Anda.</p>
+            <a href="#terbaru" class="btn btn-primary">Mulai Membaca</a>
+        </div>
+    </section>
+    
+    <main class="container" id="terbaru">
+        <div class="section-header">
+            <h2>Artikel Terbaru</h2>
+            <label class="search-artikel">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input id="search-articles" type="search" placeholder="Cari artikel..." aria-label="Cari artikel">
+            </label>
+        </div>
+
+        <div class="filter-artikel" role="group" aria-label="Filter kategori artikel">
+            <button class="filter-btn active" type="button" data-category="semua" aria-pressed="true">Semua</button>
+            <button class="filter-btn" type="button" data-category="genre" aria-pressed="false">Genre</button>
+            <button class="filter-btn" type="button" data-category="album" aria-pressed="false">Album</button>
+            <button class="filter-btn" type="button" data-category="instrumen" aria-pressed="false">Instrumen</button>
+        </div>
+
+        <div class="grid-artikel">
+            <!-- Kartu 5 -->
+            <article class="kartu" data-category="album">
+                <div class="kartu-img-wrapper">
+                    <img src="https://t2.genius.com/unsafe/387x387/https%3A%2F%2Fimages.genius.com%2F6c7ba130674022060ec4a61196bb87a3.720x720x1.png" height="200" alt="Creep - Radiohead">
+                </div>
+                <div class="konten-kartu">
+                    <div class="meta-data">
+                        <span><i class="far fa-calendar"></i> 24 Agustus 2026</span>
+                    </div>
+                    <h3><a href="artikel-5.html">Creep - Radiohead, Menyelami Lagu Kebangsaan Para 'Outsider' yang Dibenci Penciptanya</a></h3>
+                    <a href="artikel-5.html" class="baca-selengkapnya">Baca Selengkapnya</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="grid-artikel">
+            <!-- Kartu 4 -->
+            <article class="kartu" data-category="album">
+                <div class="kartu-img-wrapper">
+                    <img src="https://images-r2-1.thebrag.com/td/uploads/greatalbumcovers672a0.jpg" height="200" alt="Album Musik Ikonik">
+                </div>
+                <div class="konten-kartu">
+                    <div class="meta-data">
+                        <span><i class="far fa-calendar"></i> 20 Ags 2026</span>
+                    </div>
+                    <h3><a href="artikel-4.html">Karya Abadi: 5 Album Musik Paling Ikonik Sepanjang Masa yang Wajib Kamu Dengar</a></h3>
+                    <p>Lebih dari sekedar kumpulan lagu, kelima album ikonik ini sukses meruntuhkan tren lama dan mengubah wajah sejarah musik dunia selamanya.</p>
+                    <a href="artikel-4.html" class="baca-selengkapnya">Baca Selengkapnya</a>
+                </div>
+            </article>
+            <!-- Kartu 3 -->
+            <article class="kartu" data-category="genre">
+                <div class="kartu-img-wrapper">
+                    <img src="https://static1.squarespace.com/static/5eab5e19330140209cc30bc3/5eac58e3baebb3187f26bfdb/63f2da9c0dfbbb6b817c3742/1676892633921/top+100.jpg?format=1500w" height="200" alt="Panduan Festival Musik">
+                </div>
+                <div class="konten-kartu">
+                    <div class="meta-data">
+                        <span><i class="far fa-calendar"></i> 18 Ags 2026</span>
+                    </div>
+                    <h3><a href="artikel-3.html">Dari Garasi Seattle ke Panggung Dunia: Sejarah Singkat Musik Grunge</a></h3>
+                    <p>Kemeja flanel, distorsi kotor, dan sikap anti-rockstar. Sebuah skena musik bawah tanah di kota dingin Seattle bisa melahirkan revolusi yang meruntuhkan era glam metal 80-an dan mengubah industri musik</p>
+                    <a href="artikel-3.html" class="baca-selengkapnya">Baca Selengkapnya</a>
+                </div>
+            </article>
+            <!-- Kartu 2 -->
+            <article class="kartu" data-category="instrumen">
+                <div class="kartu-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1614355013870-f3916bc15ced?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fG11c2ljYWwlMjBpbnN0cnVtZW50fGVufDB8fDB8fHww" height="200" alt="Alat Musik">
+                </div>
+                <div class="konten-kartu">
+                    <div class="meta-data">
+                        <span><i class="far fa-calendar"></i> 15 Ags 2026</span>
+                    </div>
+                    <h3><a href="artikel-2.html">Dari Gitar hingga Drum: Mengenal Alat Musik di Balik Lagu favoritmu</a></h3>
+                    <p>Penjelasan mengenai berbagai instrumen dan peran penting mereka dalam pembentukan sebuah lagu.</p>
+                    <a href="artikel-2.html" class="baca-selengkapnya">Baca Selengkapnya</a>
+                </div>
+            </article>
+            <!-- Kartu 1 -->
+           <article class="kartu" data-category="genre">
+                <div class="kartu-img-wrapper">
+                    <img src="https://images.pexels.com/photos/38479779/pexels-photo-38479779.jpeg"  alt="Genre Musik Populer">
+                </div>
+                <div class="konten-kartu">
+                    <div class="meta-data">
+                        <span><i class="far fa-calendar"></i> 10 Ags 2026</span>
+                    </div>
+                    <h3><a href="artikel-1.html">Mengenal Genre Musik Populer di Dunia</a></h3>
+                    <p>Penjelasan tentang berbagai genre musik populer dan sejarah mereka.</p>
+                    <a href="artikel-1.html" class="baca-selengkapnya">Baca Selengkapnya</a>
+                </div>
+            </article>
+        </div>
+    </main>
+    
+    
+    <footer id="tentang-kami">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>NADA <span>&</span> IRAMA</h3>
+                <p>Platform kurasi musik digital untuk pendengar yang mencari lebih dari sekadar tangga lagu.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Kategori</h4>
+            </div>
+            <div class="footer-links">
+                <h4>Perusahaan</h4>
+                <ul>
+                    <li><a href="Tentang Kami.html">Tentang Kami</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nada & Irama. Seluruh hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
